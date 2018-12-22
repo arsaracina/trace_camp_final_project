@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from cre_ode_app.views import DiffEqCreateView, DiffEqDetailView
+from cre_ode_app.views import DiffEqCreateView, DiffEqDetailView, DiffEqListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cre_ode_app_create', DiffEqCreateView.as_view(), name = 'cre_ode_app_create'),
-    path('cre_ode_app_detail/<int:id>/', DiffEqDetailView.as_view(), name = 'cre_ode_app_detail')
+    path('cre_ode_app_detail/<int:id>/', DiffEqDetailView.as_view(), name = 'cre_ode_app_detail'),
+    path('cre_ode_app_list', DiffEqListView.as_view(), name = 'cre_ode_app_list')
 ]

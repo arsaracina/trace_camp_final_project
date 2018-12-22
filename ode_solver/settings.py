@@ -56,7 +56,7 @@ ROOT_URLCONF = 'ode_solver.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['cre_ode_app/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
